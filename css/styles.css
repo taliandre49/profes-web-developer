@@ -177,6 +177,8 @@ p {
   margin-bottom: 1rem;
 }
 
+
+
 abbr[title] {
   -webkit-text-decoration: underline dotted;
           text-decoration: underline dotted;
@@ -3319,6 +3321,7 @@ textarea.form-control-lg {
     left: auto;
   }
 }
+
 @media (min-width: 992px) {
   .dropdown-menu-lg-start {
     --bs-position: start;
@@ -5795,16 +5798,31 @@ textarea.form-control-lg {
 
 .carousel {
   position: relative;
+  width: 100%;
+  max-width: 1200px; /* Centering & max width */
+  margin: auto;
+  overflow: hidden;
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
 }
+
 
 .carousel.pointer-event {
   touch-action: pan-y;
 }
 
 .carousel-inner {
-  position: relative;
+  /* position: relative;
   width: 100%;
-  overflow: hidden;
+  overflow: hidden; */
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+  gap: 5em;
+  will-change: transform;
+  width: 100%;
 }
 .carousel-inner::after {
   display: block;
@@ -5812,15 +5830,29 @@ textarea.form-control-lg {
   content: "";
 }
 
-.carousel-item {
-  position: relative;
+.carousel-item {    
+  box-sizing: border-box; /* Include padding in width calculation */
+
+  /* position: relative;
   display: none;
   float: left;
   width: 100%;
   margin-right: -100%;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+  transition: transform 0.6s ease-in-out; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 100%; */
+  width: calc(100% / 3); /* Default: 3 cards visible */
+  opacity: 0.7;
+  transition: opacity 0.5s ease-in-out;
+  /* flex: 0 0 calc(100% / 3); */
+  flex: 0 0 auto; /* Always show 3 cards */
   transition: transform 0.6s ease-in-out;
+  opacity: 0.7; /* Dim non-active cards */
+
 }
 @media (prefers-reduced-motion: reduce) {
   .carousel-item {
@@ -5832,6 +5864,8 @@ textarea.form-control-lg {
 .carousel-item-next,
 .carousel-item-prev {
   display: block;
+  opacity: 1;
+
 }
 
 .carousel-item-next:not(.carousel-item-start),
@@ -5871,20 +5905,25 @@ textarea.form-control-lg {
 .carousel-control-prev,
 .carousel-control-next {
   position: absolute;
-  top: 0;
+  top: 50%;
   bottom: 0;
-  z-index: 1;
+  z-index: 10;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 15%;
+  width: 4%;
+  height: 11%;
   padding: 0;
   color: #fff;
   text-align: center;
   background: none;
-  border: 0;
+  border:0;
   opacity: 0.5;
   transition: opacity 0.15s ease;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  
 }
 @media (prefers-reduced-motion: reduce) {
   .carousel-control-prev,
@@ -5917,6 +5956,18 @@ textarea.form-control-lg {
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: 100% 100%;
+  color: black !important
+  /* position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  color: black;
+  z-index: 2;
+  border-radius: 50%; */
 }
 
 /* rtl:options: {
@@ -5967,6 +6018,82 @@ textarea.form-control-lg {
   opacity: 0.5;
   transition: opacity 0.6s ease;
 }
+.carousel-card {
+  /* background: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  min-height: 45em;
+  font-size: 10px;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+  background-color: #f9f9f9; */
+  background: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  display: flex;            /* Make the card a flex container */
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center;   /* Vertically center content */
+  min-height: 30em; /*Reduce minimum height of the card */
+  font-size: 1em;        /* Changed font size */
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+  background-color: #f9f9f9;
+  position: relative; /* Required for positioning the icon */
+
+
+}
+.carousel-card p {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 1.5em;
+  line-height: 1.5;
+  /* margin-bottom: 1em; */
+  flex-grow: 1; /* Allows the paragraph to take up remaining vertical space */
+  /* text-align: center; */
+  margin-top: 2.5em;
+}
+
+.recommendation-author {
+  display: block;
+  margin: 1em;
+  font-weight: bold;
+  font-style: italic;
+  color: #555;
+  font-size: 16px;
+  text-align: right; /* Center author name */
+}
+.carousel-card:before {
+  content: "\201D";  /* Unicode for a right double quotation mark */
+  font-size: 4em;      /* Adjust size as needed */
+  color: #ddd;          /* Light gray color */
+  position: absolute;
+  top: 10px;         /* Adjust position */
+  left: 10px;        /* Adjust position */
+  opacity: 0.7;         /* Make it subtle */
+  z-index: -1;         /* Send it behind the text */
+}
+
+
+.carousel-container {
+  position: relative;
+  overflow: hidden; /* Important for hiding overflowing cards */
+  width: 100%;
+  max-width: 1200px; /* Example: Maximum width of 1200 pixels */
+  background-color: #F8F4F0;
+
+}
+
+
+.carousel-card:hover {
+  transform: scale(1.05);
+}
+
+
+
 @media (prefers-reduced-motion: reduce) {
   .carousel-indicators [data-bs-target] {
     transition: none;
@@ -6089,6 +6216,18 @@ textarea.form-control-lg {
     transition: transform 0.3s ease-in-out;
   }
 }
+/* Mobile */
+/* @media (max-width: 575.98px) { 
+  .carousel-item {
+      width: 100%;
+  }
+
+} */
+@media (max-width: 992px) { 
+  .carousel-item {
+      width: 100%;
+  }
+}
 @media (max-width: 575.98px) and (prefers-reduced-motion: reduce) {
   .offcanvas-sm {
     transition: none;
@@ -6177,6 +6316,14 @@ textarea.form-control-lg {
     transition: transform 0.3s ease-in-out;
   }
 }
+@media (max-width: 767.98px) { /* Tablet */
+  .carousel-item {
+      width: calc(100% / 2); /* 2 cards visible */
+  }
+  .carousel-card {
+    max-height: 10px !important;
+  }
+}
 @media (max-width: 767.98px) and (prefers-reduced-motion: reduce) {
   .offcanvas-md {
     transition: none;
@@ -6225,6 +6372,11 @@ textarea.form-control-lg {
   .offcanvas-md.showing, .offcanvas-md.show:not(.hiding) {
     transform: none;
   }
+  .carousel-item {
+    flex: 0 0 100%;
+    width: calc(100% / 2); /* 2 cards visible  
+    width: 100%; /* 1 card visible */  /* IMPORTANT: Check this! */
+  }
 }
 @media (max-width: 767.98px) {
   .offcanvas-md.showing, .offcanvas-md.hiding, .offcanvas-md.show {
@@ -6247,6 +6399,7 @@ textarea.form-control-lg {
     overflow-y: visible;
     background-color: transparent !important;
   }
+  
 }
 
 @media (max-width: 991.98px) {
@@ -11025,13 +11178,13 @@ header.masthead .masthead-heading {
   align-items: center;
   justify-content: center;
   opacity: 0;
-  transition: opacity ease-in-out 0.25s;
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
   font-size: 1.25rem;
   color: white;
 }
 #portfolio .portfolio-item .portfolio-link:hover .portfolio-hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
   opacity: 1;
 }
 #portfolio .portfolio-item .portfolio-caption {

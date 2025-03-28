@@ -3,9 +3,11 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
+        <meta name="description" content="Professional Front End/Full Stack Developer portfolio showcasing projects, skills, and a passion for building elegant web experiences.">
+        <meta name="keywords" content="Web Developer, Front End, Full Stack, Portfolio, HTML, CSS, JavaScript, React, Node.js">
+        <!-- <meta name="description" content="" /> -->
         <meta name="author" content="" />
-        <title>Natalia Jordan</title>
+        <title>Natalia Jordan| Full-Stack/ Fron-End Developer </title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
@@ -54,9 +56,42 @@
             }
             .navbar .nav-link.active:after { 
                 content: none !important;
-                }
-
-
+            }
+            
+            /* Carousel styles
+            .carousel {
+                position: relative;
+                width: 100%;
+                max-width: 600px;
+                margin: auto;
+                overflow: hidden;
+            }
+            .carousel-container {
+                display: flex;
+                transition: transform 0.5s ease-in-out;
+            }
+            .carousel-item {
+                min-width: 100%;
+                box-sizing: border-box;
+                padding: 20px;
+                text-align: center;
+                background: #f5f5f5;
+                border-radius: 8px;
+            }
+            .carousel-btn {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background: rgba(0,0,0,0.5);
+                color: white;
+                border: none;
+                cursor: pointer;
+                padding: 10px;
+                border-radius: 50%;
+            }
+            .prev { left: 10px; }
+            .next { right: 10px; } */
+                    
             </style>
     </head>
     <body id="page-top">
@@ -73,8 +108,10 @@
                         <li class="nav-item"><a class="nav-link" href="#about" >About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#portfolio" >Projects</a></li>
                         <li class="nav-item"><a class="nav-link" href="#orgs" >Organizations</a></li>
+                        <li class = "nav-item"><a class = "nav-link" href="#recs"> Recommendations</a></li>
                         <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                 
                     </ul>
                 </div>
             </div>
@@ -83,12 +120,12 @@
         <header class="masthead">
             <div class="container">
                 <div class="masthead-subheading"> Hello, I am Natalia Jordan </div>
-                <div class="masthead-heading text-uppercase">I am  UI/UX Engineer</div>
-                <a class="btn btn-primary btn-xl text-uppercase" href="assets/uploads/UX_Engineer_Experienced_Bridging_UX_And_Engineering.pdf" target = "_blank"> View my Resume</a>
+                <div class="masthead-heading text-uppercase">I am Front-End & Full-StackEngineer</div>
+                <a class="btn btn-primary btn-xl text-uppercase" href="assets/uploads/FronteEnd_Developer_TS_JS_REACT_.pdf" target = "_blank"> View my Resume</a>
             </div>
         </header>
         <!-- about-->
-        <section class="page-section" id="about">
+        <section class="page-section" id="about" aria-label="About Me">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">About Me</h2>
@@ -116,7 +153,7 @@
                             <!-- "fa-stack fa-4x" -->
                             <!-- <i class="fas fa-circle fa-stack-2x text-primary"></i>
                             <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i> -->
-                            <img src = "assets/img/about/professionalHeadshot (2).jpg">
+                            <img src = "assets/img/about/professionalHeadshot (2).jpg" alt="Professional headshot" >
                         </span>
                         <h4 class="my-3"> Who am I?</h4>
                         <p class="text-muted">Originally from New York and Colombia, I discovered my passion for coding while on a pre-med path during my early college semesters. On a whim, I took a coding class—and it stuck. Since then, I’ve transitioned to the digital world, pursuing a major in Computer Science and Information Sciences, driven by my fascination with technology's impact on daily life.
@@ -314,7 +351,83 @@
                 </ul>
             </div>
         </section>
-        <!-- Team-->
+    <!-- Reccomendations -->
+
+        <section class="page-section bg-light" id="recs">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Recommendations</h2>
+                    <h3 class="section-subheading text-muted">Hear from those I've worked with</h3>
+                </div>
+                    <!-- <div class="carousel">
+                        <button class="carousel-btn prev">&#10094;</button>
+                        <div class="carousel-wrapper">
+                            <div class="carousel-container">
+                                <div class="carousel-item">"Natalia is an exceptional developer!" - John Doe</div>
+                                <div class="carousel-item">"Her problem-solving skills are top-notch!" - Jane Smith</div>
+                                <div class="carousel-item">"A pleasure to work with, always delivers!" - Alex Brown</div>
+                            </div>
+                        </div>
+                        <button class="carousel-btn next">&#10095;</button>
+                    </div> -->
+                    <div id="recommendation-carousel" class="carousel carousel-container">
+                        <div class="carousel-inner">
+                            <div class="carousel-item ">
+                               <div class="carousel-card">
+                                    <p>"Natalia is a very talented full-stack software engineer with a strong front-end focus, seamlessly blending technical expertise with a deep understanding of user experience."</p>
+                                    <span class="recommendation-author">— Tom Lasparini, COO, The Adaptavist Group</span>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-card">
+                                    <p>"She is a proactive problem-solver and natural collaborator, thriving in fast-paced environments and enhancing team productivity through insightful feedback."</p>
+                                    <span class="recommendation-author">— Tom Lasparini, COO, The Adaptavist Group</span>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-card">
+                                    <p>"Her timeliness, accountability, and passion for excellence and teamwork will undoubtedly make a significant positive impact wherever she goes."</p>
+                                    <span class="recommendation-author">— Monica Wilson, Senior Project Manager, Adaptavist</span>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-card">
+                                    <p>"Natalia’s drive, curiosity, and innovative nature have enabled her to excel in various areas beyond her current roles."</p>
+                                    <span class="recommendation-author">— Markus Kobold, Mentor</span>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-card">
+                                    <p>"With exceptional communication abilities and a strong desire to continually learn, Natalia is an excellent asset for any project or team."</p>
+                                    <span class="recommendation-author">— Markus Kobold, Mentor</span>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="carousel-card">
+                                    <p>"She was a fantastic person to have in The Adaptavist Group and will be greatly missed."</p>
+                                    <span class="recommendation-author">— Tom Lasparini, COO, The Adaptavist Group</span>
+                                </div>
+                            </div>
+            
+                        </div>
+                        <button class="carousel-control-prev">
+                            <span class="carousel-control-prev-icon">
+                                <!-- &#10094; -->
+                            </span>
+                            
+                        </button>
+                        <button class="carousel-control-next">
+                            <span class="carousel-control-next-icon">
+                                <!-- &#10095; -->
+                            </span>
+                          
+                        </button>
+                    </div>
+                    
+            </div>
+        </section>
+            <!-- Skills-->
         <section class="page-section bg-light" id="skills">
             <div class="container">
                 <div class="text-center">
@@ -329,11 +442,11 @@
                             <div>
                                 <p>JavaScript</p> 
                                 <p>TypeScript</p>
-                                <p>React</p>
+                                <p>React.js</p>
+                                <p>Vue.js</p>
                                 <p>HTML</p> 
                                 <p>CSS</p>
                                 <p>JQuery</p> 
-                                <p>Node JS</p> 
                                 <p>PHP</p> 
                               </div>
                            
@@ -343,14 +456,14 @@
                         <div class="team-member">
                             <img class="mx-auto rounded-circle" src="assets/img/back-end.png" alt="..." />
                             <h4>Back End</h4>
-                            
+                            <p>Node.js</p> 
+                            <p>Express.js</p>
                             <p>Python</p> 
                             <p>C</p>
-                        
+                            <p>GoLang</p>
                             <p>Java</p>
                             <p>SQL</p> 
                             <p> OCaml</p>
-                            <p>TypeScript</p>
                             <p>Groovy</p> 
                          
                         </div>
@@ -359,13 +472,15 @@
                         <div class="team-member">
                             <img class="mx-auto rounded-circle" src="assets/img/platformss.png" alt="..." />
                             <h4>Platforms</h4>
-                            <p>GitLab</p> 
-                                <p>Github</p>
-                                <p>Amazon Web Services</p> 
-                                <p>Jira (Cloud and Data Center)</p>
-                                <p>Atlassian</p>
-                                <p>Monday.com</p> 
-                                <p>ScripRunner Connect/ Zappier/ Make</p>
+                            <p>Git</p> 
+                            <p>Docker</p>
+                            <p>Amazon Web Services</p> 
+                            <p>Atlassian Suite Tools</p>
+                            <p>Monday.com</p> 
+                            <p>ScripRunner Connect / Zappier / Make</p>
+                            <p> Figma</p>
+                            <p> Miro</p>
+
                         </div>
                     </div>
                 </div>
@@ -657,8 +772,194 @@
                 </div>
             </div>
         </div>
+        <script>
 
+            const carouselInner = document.querySelector(".carousel-inner");
+            const cards = document.querySelectorAll(".carousel-item");
+            const totalCards = cards.length;
+            let visibleCards = 3; // Initial value
+            let currentIndex = 0;
+            let cloned = false;  // Flag to track if cloning has been done
+
+            function updateVisibleCards() {
+                let newVisibleCards;
+                if (window.innerWidth <= 576) {
+                    newVisibleCards = 1;
+                } else if (window.innerWidth <= 968) {
+                    newVisibleCards = 2;
+                } else {
+                    newVisibleCards = 3;
+                }
+
+                if (newVisibleCards !== visibleCards) {
+                    visibleCards = newVisibleCards;
+                    console.log("Visible Cards (Updated): ", visibleCards);
+
+                    // Re-clone if visibleCards changes (important!)
+                    if (cloned) {
+                        removeClones(); // Remove existing clones first
+                        cloned = false;  // Reset the flag
+                    }
+                    cloneCards();  // Re-clone based on new visibleCards
+                } else {
+                    console.log("Visible Cards (No Change): ", visibleCards);
+                }
+            }
+
+            function cloneCards() {
+                if (!cloned) {
+                    let numClones = visibleCards; // Clone enough to fill the screen
+                    for (let i = 0; i < numClones; i++) {
+                        let clone = cards[i].cloneNode(true); // Deep clone
+                        carouselInner.appendChild(clone);
+                        clone.classList.add("carousel-clone"); // Add a class for easy removal
+                    }
+                    cloned = true;
+                }
+            }
+
+            function removeClones() {
+                const clones = document.querySelectorAll(".carousel-clone");
+                clones.forEach(clone => clone.remove());
+            }
+
+            function updateCarousel() {
+                const cardStyle = window.getComputedStyle(cards[0]);
+                const cardWidth = cards[0].offsetWidth + parseFloat(cardStyle.marginLeft) + parseFloat(cardStyle.marginRight);
+                // const cardWidth = Math.round(cards[0].offsetWidth); // Round to nearest pixel
+                let offset = Math.round(-(currentIndex * (cardWidth + 80))); // Round to nearest pixel
+
+                console.log("Offset: ", offset, "currentIndex:", currentIndex, "visibleCards:", visibleCards, "cardWidth:", cardWidth, "translating", offset);
+                carouselInner.style.transform = `translateX(${offset}px)`;
+            }
+            function nextSlide() {
+                currentIndex = (currentIndex + 1) % totalCards;
+                console.log("Next - Current Index: ", currentIndex);
+                updateCarousel();
+
+                // Seamless loop: Jump back to the beginning
+                if (currentIndex === 0 && visibleCards === 1) {
+                    carouselInner.style.transition = 'none';  // Disable transition
+                    requestAnimationFrame(() => {  // Wait for the DOM to update
+                        currentIndex = 0;  // Reset to the beginning
+                        updateCarousel();
+                        requestAnimationFrame(() => {
+                            carouselInner.style.transition = '';  // Re-enable transition
+                        });
+                    });
+                }
+            }
+
+            function prevSlide() {
+                currentIndex = (currentIndex - 1 + totalCards) % totalCards;
+                console.log("Prev - Current Index: ", currentIndex);
+                updateCarousel();
+
+                if (currentIndex === totalCards - 1 && visibleCards === 1) {
+                    carouselInner.style.transition = 'none';  // Disable transition
+                    requestAnimationFrame(() => {  // Wait for the DOM to update
+                        currentIndex = totalCards - 1;  // Reset to the beginning
+                        updateCarousel();
+                        requestAnimationFrame(() => {
+                            carouselInner.style.transition = '';  // Re-enable transition
+                        });
+                    });
+                }
+            }
+
+            const nextButton = document.querySelector(".carousel-control-next");
+            const prevButton = document.querySelector(".carousel-control-prev");
+
+            if (nextButton) {
+                nextButton.addEventListener("click", nextSlide);
+            } else {
+                console.error("Next button not found!");
+            }
+
+            if (prevButton) {
+                prevButton.addEventListener("click", prevSlide);
+            } else {
+                console.error("Previous button not found!");
+            }
+
+            updateVisibleCards();
+            cloneCards(); // Initial cloning
+            updateCarousel();
+
+            let resizeTimeout;
+            window.addEventListener('resize', () => {
+                clearTimeout(resizeTimeout);
+                resizeTimeout = setTimeout(() => {
+                    updateVisibleCards();
+                    updateCarousel();
+                }, 100);
+            });
+            /*
+                TRUE BELOW USE BELOW
+            
+
+            // */
+            // const carouselInner = document.querySelector(".carousel-inner");
+            // const cards = document.querySelectorAll(".carousel-item");
+            // const totalCards = cards.length;
+            // let visibleCards = 3; // Initial value
+            // let currentIndex = 0;
+            // let stopProg = false;
+
+            // function updateVisibleCards() {
+            //     if (window.innerWidth <= 575.98 ) {
+            //         visibleCards = 1;
+            //         stopProg = true;
+                    
+            //     } else if (window.innerWidth <= 768) {
+            //         visibleCards = 2;
+
+            //     } else {
+            //         visibleCards = 3;
+            //     }
+            //     console.log("Visible Cards: ", visibleCards); // Add for debugging
+            // }
+
+            // function updateCarousel() {
+            //     let offset;
+            //     if (visibleCards === 1) {
+            //         offset = -(currentIndex * 115.5); // Directly translate by 100%
+            //     } else {
+            //         offset = -(currentIndex * (120 / visibleCards)); // Original Calculation
+            //     }
+            //     console.log("Offset: ", offset, "currentIndex:", currentIndex, "visibleCards:", visibleCards); // DEBUG!
+            //     carouselInner.style.transform = `translateX(${offset}%)`;
+               
+            // }
+
+            // function nextSlide() {
+            //     currentIndex = (currentIndex + 1) % totalCards;
+            //     console.log("Next - Current Index: ", currentIndex);  // Add for debugging
+            //     updateCarousel();
+            // }
+
+            // function prevSlide() {
+            //     currentIndex = (currentIndex - 1 + totalCards) % totalCards;
+            //     console.log("Prev - Current Index: ", currentIndex);  // Add for debugging
+            //     updateCarousel();
+            // }
+
+            // // Attach event listeners
+            // document.querySelector(".carousel-control-next").addEventListener("click", nextSlide);
+            // document.querySelector(".carousel-control-prev").addEventListener("click", prevSlide);
+
+            // // Initialize
+            // updateVisibleCards(); // Set initial visibleCards
+            // updateCarousel();
+
+            // // Update visibleCards on window resize
+            // window.addEventListener('resize', () => {
+            //     updateVisibleCards();
+            //     updateCarousel();
+            // });
+            
+        </script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="js/scripts.js"></script>
-    
+    </body>
 </html>
