@@ -11433,6 +11433,8 @@ header.masthead .masthead-heading {
 
 
 
+
+
 .contact-info-container {
   background-color: rgba(255, 255, 255, 0.9);
   padding: 2rem;
@@ -11462,12 +11464,41 @@ header.masthead .masthead-heading {
   color: #333; /* Darker text for readability */
 }
 
-/* Responsive adjustments (example) */
+/* Responsive adjustments*/
 @media (max-width: 768px) {
   .contact-item {
       margin-bottom: 1rem;
   }
 }
+
+
+/* Base Styling for Contact Items */
+.contact-item a {
+  display: block; /* Important: Make the entire area clickable */
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out; /* Smooth transitions */
+  border-radius: 8px; /* Rounded corners */
+  padding: 10px; /* Add some padding around the content */
+}
+
+/* Hover Effect: Scale and Lighten */
+.contact-item a:hover {
+  transform: scale(1.05); /* Slightly scale up */
+  background-color: rgba(0, 0, 0, 0.05); /* Light background overlay on hover */
+}
+
+/* Focus Effect (Accessibility) */
+.contact-item a:focus {
+    outline: 2px solid #007bff; /* A clear outline for keyboard users */
+    outline-offset: 2px; /* Space between the outline and the element */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Optional: Add a subtle glow */
+}
+
+/* Active Effect (When Clicked) */
+.contact-item a:active {
+  transform: scale(0.95); /* Slightly scale down when clicked */
+  background-color: rgba(0, 0, 0, 0.1); /* A slightly darker background overlay when clicked */
+}
+
 
 
 
