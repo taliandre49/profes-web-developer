@@ -11476,6 +11476,15 @@ header.masthead .masthead-heading {
     margin-bottom: 1em;
   }
 }
+
+@media (max-width: 500px) {
+    #mobilerec{
+      font-size: 2.1rem;
+  }
+  /* h2.section-heading.text-uppercase.mobilerec{
+    color: red !important;
+  } */
+}
 /* STYLING FOR SKILLS SECTION */
 
 /* Add these styles to your CSS file */
