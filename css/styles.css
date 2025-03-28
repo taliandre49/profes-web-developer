@@ -11469,6 +11469,12 @@ header.masthead .masthead-heading {
   .contact-item {
       margin-bottom: 1rem;
   }
+  .text-center{
+    padding-top: 5em;
+  }
+  .contact-info-container{
+    margin-bottom: 1em;
+  }
 }
 /* STYLING FOR SKILLS SECTION */
 
