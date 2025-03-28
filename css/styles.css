@@ -11480,12 +11480,15 @@ header.masthead .masthead-heading {
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Subtle shadow */
-  transition: transform 0.2s ease-in-out; /* Smooth hover effect */
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Add a subtle white border */
+  /* transition: transform 0.2s ease-in-out; Smooth hover effect */
+  border-color: 0.2s ease-in-out; 
+  /* transition: transform 0.2s ease-in-out, Smooth hover effect with border color transition */
+  background-color: rgba(255, 255, 255, 0.05); /* A very light background color */
+
+
 }
 
-.skill-category:hover {
-  transform: translateY(-5px); /* Slight lift on hover */
-}
 
 .skill-icon {
   width: 80px; /* Adjust size as needed */
