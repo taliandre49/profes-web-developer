@@ -11470,7 +11470,48 @@ header.masthead .masthead-heading {
       margin-bottom: 1rem;
   }
 }
+/* STYLING FOR SKILLS SECTION */
 
+/* Add these styles to your CSS file */
+
+/* General Skill Section Styling */
+.skill-category {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+  transition: transform 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+.skill-category:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.skill-icon {
+  width: 80px; /* Adjust size as needed */
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  object-fit: cover; /* Prevents distortion */
+}
+
+.skill-category h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.skills-list {
+  list-style: none; /* Remove bullet points */
+  padding: 0;
+  margin: 0;
+}
+
+.skills-list li {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
 
 /* Base Styling for Contact Items */
 .contact-item a {
