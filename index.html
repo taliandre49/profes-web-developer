@@ -92,25 +92,154 @@
             </div>
         </nav>
         <!-- Masthead-->
-        <header class="masthead">
-            <div class="container">
-                <div class="masthead-subheading"> Hello, I am Natalia Jordan </div>
-                <div class="masthead-heading text-uppercase">
-                    I am a 
-                    <br>Front-End & Full-Stack Engineer
+        <!-- <header class="masthead containerHead flexro">
+                <div class="container ">
+                    <div  class="masthead-heading"> Natalia Jordan </div>
+                    <div class="masthead-subheading typewriter">
+                        <span id="animated-text"></span>
                     </div>
-                <a class="btn btn-primary btn-xl text-uppercase" href="assets/uploads/FronteEnd_Developer_TS_JS_REACT_.pdf" target = "_blank"> View my Resume</a>
+
+                    <div>
+                         <button class="cta">
+                            <a class="" href="assets/uploads/FronteEnd_Developer_TS_JS_REACT_.pdf" target = "_blank"   style = "text-decoration: none";
+                            >
+
+                            <span>View My Resume</span>
+                            <svg width="15px" height="10px" viewBox="0 0 13 10">
+                            <path d="M1,5 L11,5"></path>
+                            <polyline points="8 1 12 5 8 9"></polyline>
+                            </svg>
+                            </a>
+                        </button>
+                    </div>
+                <div class= "svg-loader">
+                    <svg viewBox="0 0 100 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                    <path
+                        d="M50 0 C70 50, 30 100, 50 150 C70 175, 30 200, 50 200"
+                        stroke="#4a4a4a"
+                        stroke-width="2"
+                        fill="none"
+                        class="path"
+                    />
+                    </svg>
+                </div> 
+                    <img src="./assets/svgs/26-PM-unscreen (1).gif" alt="My Animated GIF" style="width: 20em; height: 30em; overflow: hidden;">
+
+
+                </div>
+            </header>
+            -->
+            <!-- <div class = "containerTest">
+                <div id = "left">
+                    <p>test</p>
+                    <p>test</p>
+                    <p>test</p>
+                </div>
+                <div id = "right">
+                    <p>test</p>
+                    <p>test</p>
+                    <p>test</p>
+                </div>
+            </div> -->
+            <header class="masthead containerHead">
+            <div class = "containerTest">
+                <!-- <div class="left-content"> -->
+            <div id = "left">
+                <div class="masthead-heading">Natalia Jordan</div>
+            
+                <!-- Typewriter animation in its own div -->
+                <div class="masthead-subheading typewriter">
+                    <span id="animated-text"></span>
+                </div>
+            
+                <!-- Resume button separated so it doesn't move -->
+                <div class="resume-button-wrapper">
+                    <button class="cta">
+                        <a href="assets/uploads/Natalia_Jordan_FrontEnd_FullStack_Developer_Resume.pdf" target="_blank" style="text-decoration: none;">
+                            <span>View My Resume</span>
+                            <svg width="15px" height="10px" viewBox="0 0 13 10">
+                                <path d="M1,5 L11,5"></path>
+                                <polyline points="8 1 12 5 8 9"></polyline>
+                            </svg>
+                        </a>
+                    </button>
+                </div>
+            
+                <!-- SVG Loader stays where it is -->
+                <div class="svg-loader">
+                    <svg viewBox="0 0 100 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                        <path
+                            d="M50 0 C70 50, 30 100, 50 150 C70 175, 30 200, 50 200"
+                            stroke="#4a4a4a"
+                            stroke-width="2"
+                            fill="none"
+                            class="path"
+                        />
+                    </svg>
+                </div>
             </div>
+            <div id= "right">
+             <!-- RIGHT SIDE -->
+              <!-- div class="right-image" -->
+                    <!-- <img src="./assets/svgs/26-PM-unscreen (1).gif" alt="My Animated GIF" style="width: 20em; height: 30em; overflow: hidden;"> -->
+                    <img id = "animatedportrait" src="./assets/svgs/ChatGPT Image Apr 7, 2025, 08_07_30 PM.png" alt="My Animated portrait" style="width: 30em; height: 35em; overflow: hidden; border-radius: 40%;">
+            </div>
+        </div>
         </header>
-        <!-- about-->
+            
+<!-- 
+        <section class="page-section elevator" id="scroll-trigger" aria-label="" style = "margin-left: -5em;">
+
+                <div class="image-wrap" id="travel-wrap" style = "color:white;">
+                    <img id = "travel" class="dispersible" src="assets/aboutme/Screenshot 2025-04-08 at 4.40.53 PM.png" alt="Travel" />
+                    <div class="text-box" style ="max-width:10em; font-size: smaller;">Each journey brings a new perspective, just like how I approach coding, always considering different perspectives to enhance accessibility. 🌍</div>
+                </div>
+                <div class="image-wrap" id="sombrero-wrap" style = "color:white">
+                    <img id = "sombrero" class="dispersible" src="assets/aboutme/sobrero.png" alt="Culture" />
+                    <div class="text-box test" style ="max-width:10em; font-size: smaller;">Traditional Colombian Sombrero- from my roots in Colombia to tech, I’m passionate about creating inclusive solutions for all.</div>
+                </div>
+                <div class="image-wrap" id="coffee-wrap" style = "color:white">
+                    <img id = "coffee" class="dispersible" src="assets/aboutme/Screenshot 2025-04-08 at 4.41.18 PM.png" alt="Coffee" />
+                    <div class="text-box" style ="max-width:10em; font-size: smaller;">Fueling my code sessions with a cup of Matiz Colombian coffee, perfect for ideation and inspiration! What’s your go-to brew for coding?</div>
+                </div>
+                <div class="image-wrap" id="gym-wrap" style = "color:white">
+                    <img id ="gym" class="dispersible" src="assets/aboutme/Screenshot 2025-04-08 at 4.41.05 PM.png" alt="Fitness"   />
+                    <div class="text-box" style ="max-width:10em; font-size: smaller;">Lifting weights and bringing that same passion to everything I build</div>
+                </div>
+                <div class="image-wrap" id="headphones-wrap" style = "color:white"> 
+                    <img id = "headphones" class="dispersible" src="assets/aboutme/image-from-rawpixel-id-6338508-png.png" alt="AI"  style= "max-width: 80%; max-height: 80%;"/>
+                    <div class="text-box" style ="max-width:1em; font-size: smaller;" >My productivity sidekick? Headphones, with a playlist full of Reggaeton, Salsa, and Bachata to keep me moving!</div>
+                </div>
+                <div>
+                    <img id="computer" class = "elevator-computer" src="assets/aboutme/vecteezy_a-laptop-with-a-black-screen-and-a-keyboard_59042167.png" alt="Computer" style = "max-width:30%; max-height:30%;" />
+                    <div class="text-box about-title" style = "color:white;">About Me</div>
+                </div>
+   
+        </section>
+        <div ></div>  -->
+        
         <section class="page-section" id="about" aria-label="About Me">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">About Me</h2>
                     <div style = "line-height: 1.2 !important; margin: 0; padding:0 !important;" >
-                        <h3 class="section-subheading text-muted"> Designing intuitive experiences, one pixel at a time.</h3>
+                        <h3 class="section-subheading text-muted"> Designing intuitive experiences, one pixel at a time.</h3> 
                         <h3 class="section-subheading text-muted" style= "margin-top:-3em;"> Experienced in Front-End, Back-End, and Full-Stack Software Development.</h3>
+                        <!-- <div class="cardSpec">
+                            <div class="loader">
+                              <p>I specialize in</p>
+                              <div class="words">
+                                <span class="word">Front End</span>
+                                <span class="word">Full Stack</span>
+                                <span class="word">Back End</span>
+                                <span class="word"> Software Developement</span>
+                                <span class="word"> UX/UI Engineering</span>
+                              </div>
+                            </div>
+                        </div> -->
+
                     </div>
+             
                 </div>
                 <div class="row text-center">
                    
@@ -1005,7 +1134,169 @@
                     updateCarousel();
                 }, 100);
             });
-            
+        </script>
+        <script>
+            const titles = [
+    "Front-End Developer",
+    "Full-Stack Developer",
+    "Software Developer",
+    "UI/UX Engineer",
+    "Avid Snack Enthusiast (will code for Cookies)"
+  ];
+
+  const element = document.getElementById("animated-text");
+
+  let currentTextIndex = 0;
+
+  function updateText() {
+    // Set the text content
+    var fontsizeAnimate
+    element.textContent = titles[currentTextIndex];
+
+    // Measure the width of the text dynamically
+    const textWidth = element.offsetWidth;  // Get the width of the text in pixels
+
+    // Apply animation dynamically to the element
+    const animationDuration = 5;  // Duration for type-and-delete (in seconds)
+    
+    // Set dynamic width for the animation
+    element.style.animation = "none";  // Reset animation
+    // element.style.fontSize = ""; //reste size
+    element.offsetHeight;             // Trigger reflow (forces the reset)
+
+    // Set dynamic width for the typeAndDelete keyframe animation
+    const dynamicKeyframes = `
+      @keyframes typeAndDelete {
+        0%, 10% {
+          width: 0;
+        }
+        40%, 65% {
+          width: ${textWidth + 20}px; /* Use the text's width dynamically */
+        }
+        90%, 100% {
+          width: 0;
+        }
+      }
+    `;
+    if (window.innerWidth >= 1500) {
+       fontsizeAnimate = "xx-large"
+    } else if (window.innerWidth >= 900 && window.innerWidth < 1500){
+        // here is where issue happens
+       fontsizeAnimate = "x-large"
+    } else if (window.innerWidth >= 480 && window.innerWidth < 900) {
+        fontsizeAnimate = "large"
+    } else if (window.innerWidth < 480){
+        fontsizeAnimate = "medium"
+
+    }
+
+    // Inject the dynamic keyframes into the document
+    const styleSheet = document.createElement("style");
+    styleSheet.type = "text/css";
+    styleSheet.innerText = dynamicKeyframes;
+    document.head.appendChild(styleSheet);
+
+    // Apply the animation with the calculated width
+    element.style.animation = `typeAndDelete ${animationDuration}s steps(${Math.floor(textWidth / 10)}) forwards`;
+    console.log(`font size before set: ${fontsizeAnimate}, window size: ${window.innerWidth}`)
+    element.style.fontSize =fontsizeAnimate;
+    // element.style.fontSize = `${window.innerWidth / 1150}px !important`;
+    // element.style.setProperty('font-size', `${window.innerWidth / 70}px !important`, 'important');
+
+    // Move to the next phrase in the array
+    currentTextIndex = (currentTextIndex + 1) % titles.length;
+  }
+
+  // Ensure the page is fully loaded before starting the animation
+  window.onload = function() {
+    // Initialize the first phrase and start the animation loop
+    updateText();
+    setInterval(updateText, 5000); // Change text every 7 seconds
+  };
+
+        // const titles = [
+        //     "Front-End Developer",
+        //     "Full-Stack Developer",
+        //     "Software Developer",
+        //     "UI/UX Engineer",
+        //     "Avid Snack Enthusiast (will code for Cookies)"
+        // ];
+
+        // const element = document.getElementById("animated-text");
+
+        // let currentTextIndex = 0;
+
+        // function updateText() {
+        //     // Update text in the element
+        //     element.textContent = titles[currentTextIndex];
+        //     const textWidth = element.offsetWidth;  // Get the width of the text in pixels
+
+        //     const animationDuration = 5;  // Duration for type-and-delete (in seconds)
+
+        //     // Update index for next phrase
+        //     currentTextIndex = (currentTextIndex + 1) % titles.length;
+
+        //     // Trigger the animation by clearing and resetting animation
+        //     element.style.animation = "none"; // Reset animation
+        //     element.offsetHeight; // Trigger reflow
+        //     element.style.animation = `typeAndDelete ${animationDuration}s steps(${textWidth / 30}) forwards`; // Update animation with dynamic width
+
+        //     // element.style.animation = "typeAndDelete 5s steps(30) infinite"; // Restart animation
+        // }
+
+        // // Change text every 7 seconds (this matches the duration of the type-and-delete animation)
+        // setInterval(updateText, 5000); // 7000ms = 7 seconds
+        // // Start the typing effect
+        // updateText();
+
+        </script>
+        <!-- <script>
+
+
+        //CORRECT: 
+        const section = document.getElementById('scroll-trigger');
+        const computer = document.getElementById('computer');
+        const images = document.querySelectorAll('.dispersible');
+        let Abouttitle;
+
+        window.addEventListener('scroll', () => {
+        const rect = section.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+
+        // scroll progress from 0 (section bottom not in view) to 1 (fully in view)
+        const progress = Math.min(Math.max(1 - rect.top / windowHeight, 0), 1);
+
+        // Move computer straight up
+        const computerYOffset = progress * 600; // adjust height as needed
+        computer.style.transform = `translate(-50%, -${computerYOffset}px)`;
+
+        const baseRadius = 300;
+        Abouttitle = document.querySelector('.about-title');
+
+
+        const imageConfigs = {
+        travel: { angle: -120, radius: 300 },
+        gym: { angle: -35, radius: 455 },
+        sombrero: { angle: 20, radius: 455 },
+        coffee: { angle: -10, radius: 455 },
+        headphones: { angle: 160, radius: 300}
+        };
+
+
+        images.forEach((img) => {
+        const wrap = img.parentElement;
+        const text = wrap.querySelector('.text-box');
+        const { angle, radius } = imageConfigs[img.id] || { angle: 0, radius: baseRadius };
+        const progressRadius = (progress * radius);
+        const angleRad = angle * (Math.PI / 180);
+        const x = Math.cos(angleRad) * progressRadius;
+        const y = Math.sin(angleRad) * progressRadius;
+        wrap.style.transform = `translate(${x}px, ${-y}px)`;
+        text.style.opacity = progress/1.7 > 0.1 ? progress/1.7 : 0;
+        });
+        })
+        Abouttitle.style.opacity = progress > 0.1 ? progress : 0; -->
+
         </script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="js/scripts.js"></script>
